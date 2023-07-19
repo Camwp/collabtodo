@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/base.css">
+  <title>Collaborative To-Do List</title>
+</head>
+<body>
+    <h1>Collaborative To-Do List</h1>
+    <div>
+      <h2>Cameron's List</h2>
+      <input type="text" id="cameronItem" placeholder="Add a task">
+      <button onclick="addItem('cameron')">Add</button>
+      <ul id="cameronList"></ul>
+    </div>
+    <div>
+      <h2>Macey's List</h2>
+      <input type="text" id="maceyItem" placeholder="Add a task">
+      <button onclick="addItem('macey')">Add</button>
+      <ul id="maceyList"></ul>
+    </div>
+    <div>
+      <h2>Jesse's List</h2>
+      <input type="text" id="jesseItem" placeholder="Add a task">
+      <button onclick="addItem('jesse')">Add</button>
+      <ul id="jesseList"></ul>
+    </div>
+
+  <!-- Include Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database-compat.js"></script>
+  <script src="scripts/firebase.js"></script>
+</body>
+</html>
+
+
